@@ -47,7 +47,23 @@
    - Verified changes on GitHub web interface.  
 
 ---
+## Part 2 - Multi-file Program with Makefile
 
-## Later Sections
-(Will be filled when completing Features 2–5)
+### Steps Performed
+1. Created header file `include/hello.h` with function prototype.
+2. Created implementation file `src/hello.c` with function definition.
+3. Created driver file `src/main.c` calling `print_hello()`.
+4. Wrote `Makefile`:
+   - Compiles `.c` → `.o` into `obj/`
+   - Links `.o` → executable `bin/program`
+   - Includes `all` and `clean` targets
+5. Built and tested using `make` and ran `./bin/program`.
+6. Cleaned project using `make clean`.
+
+### Report Question (Linking Rule)
+- **Rule:**  
+  ```make
+  $(TARGET): $(OBJECTS)
+  	$(CC) $(CFLAGS) -o $@ $^
+
 
