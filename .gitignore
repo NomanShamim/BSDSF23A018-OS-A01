@@ -1,0 +1,17 @@
+# Ignore compiled objects and temporary files
+*.o
+*~
+*.swp
+.DS_Store
+
+# Ignore compiled outputs inside bin, lib, obj but keep the folders
+/bin/*
+!/bin/.gitkeep
+/lib/*
+!/lib/.gitkeep
+/obj/*
+!/obj/.gitkeep
+
+# Ignore executables and libraries
+*.a
+*.so
