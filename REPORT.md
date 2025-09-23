@@ -86,3 +86,7 @@
 - Difference between tag types:  
   - **Lightweight tag:** just a name pointing directly to a commit (like a bookmark).  
   - **Annotated tag:** a full Git object stored with metadata (message, tagger name, date). Recommended for official releases.
+
+### GitHub Release
+- A GitHub Release is a snapshot of the project at a tagged commit.
+- Attaching binaries (like the compiled `hello` program) makes it easy for users to run the program without building from source.
