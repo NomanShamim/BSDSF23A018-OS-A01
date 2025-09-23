@@ -67,3 +67,22 @@
   	$(CC) $(CFLAGS) -o $@ $^
 
 
+- Created an annotated tag `v1.0` to mark the first stable version of the project (multi-file program with Makefile).
+- Commands used:
+  ```bash
+  git tag -a v1.0 -m "First release: multi-file program with Makefile"
+  git push origin v1.0
+
+
+### Tag and Release
+- Created an annotated tag `v1.0` to mark the first stable version of the project (multi-file program with Makefile).
+- Commands used:
+  ```bash
+  git tag -a v1.0 -m "First release: multi-file program with Makefile"
+  git push origin v1.0
+  ```
+- Purpose of tags:  
+  Tags are fixed pointers to specific commits. They are commonly used to mark release versions so the exact code at that point can always be retrieved. Unlike branches, tags do not move when new commits are added.
+- Difference between tag types:  
+  - **Lightweight tag:** just a name pointing directly to a commit (like a bookmark).  
+  - **Annotated tag:** a full Git object stored with metadata (message, tagger name, date). Recommended for official releases.
